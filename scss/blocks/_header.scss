@@ -1,11 +1,78 @@
 .site-header{
-
+    padding: 77px 0 129px;
 }
 
 .header{
-    
+    @include display($space:space-between)
 }
-.title{
-    color: red;
-    font-size: 40px;
+.header__logo-wrapper{
+    @include display();
+}
+.header__navbar{
+    margin-left: 80px;
+}
+.navbar__list{
+    @include display();
+}
+.navbar__item + .navbar__item{
+    margin-left: 40px;
+}
+
+.navbar__link{
+    @include textStyle();
+    transition: color 0.3s linear;
+    &:hover{
+         color: #F67E7E;
+    }
+}
+.header__hamburger-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.header__contact-us{
+    @include textStyle();
+    padding: 9px 33px 11px 32px;
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    transition: all 0.3s linear;
+    &:hover{
+        background: #FFF;
+        color: #000;
+    }
+}
+
+
+@media (max-width:800px){
+    .site-header{
+        padding: 64px 0 112px;
+    }
+    .header__logo-img{
+        width: 128px;
+        height: 32px;
+    }
+    .header__navbar{
+        margin-left: 48px;
+    }
+    .navbar__link{
+        @include textStyle($fontSize:16px, $lineHeight:26px)
+    }
+    .header__contact-us{
+        @include textStyle($fontSize:16px, $lineHeight:26px);
+        padding: 8px 30px;
+    }
+}
+
+@media (max-width:580px){
+    .site-header{
+        padding: 48px 0 80px;
+    }
+    .header__navbar, .header__contact-us{
+        display: none;
+    }
+    .header__hamburger-btn{
+        display: block;
+    }
+
 }

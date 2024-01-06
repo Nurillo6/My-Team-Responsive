@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Your site name</title>
 </head>
@@ -11,7 +14,25 @@
     <header class="site-header">
         <div class="container">
             <div class="header">
-                
+                <div class="header__logo-wrapper">
+                    <a class="header__logo-link" href="/">
+                        <img src="./images/logo.svg" alt="Site Logo" class="header__logo-img" width="160" height="40">
+                    </a>
+                    <nav class="header__navbar navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">about</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a class="header__contact-us" href="#">contact us</a>
+                <button class="header__hamburger-btn" type="button">
+                    <img class="header__hamburger-img" src="./images/hambuger.svg" alt="">
+                </button>
             </div>
         </div>
     </header>
@@ -22,7 +43,47 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
-
+                    <div class="hero__title-wrapper">
+                        <h1 class="hero__title">
+                            Find the best <span class="hero__title hero__title--color">talent</span>
+                        </h1>
+                    </div>
+                    <div class="hero__text-wrapper content">
+                        <span class="content__line"></span>
+                        <p class="content__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="container">
+                <div class="service">
+                    <div class="service__title-wrapper">
+                        <h2 class="service__title">Build & manage distributed teams like no one else.</h2>
+                    </div>
+                        <ul class="service__list">
+                            <li class="service__item">
+                                <img class="service__icon" src="./images/service-list-icon.svg" alt="Experienced Individuals Icon" width="72" height="72">
+                                <div class="service__item-content-wrapper inner-wrap">
+                                    <h3 class="inner-wrap__title">Experienced Individuals</h3>
+                                    <p class="inner-wrap__text">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                                </div>
+                            </li>
+                            <li class="service__item">
+                                <img class="service__icon" src="./images/service-list-icon.svg" alt="Experienced Individuals Icon" width="72" height="72">
+                                <div class="service__item-content-wrapper inner-wrap">
+                                    <h3 class="inner-wrap__title">Experienced Individuals</h3>
+                                    <p class="inner-wrap__text">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                                </div>
+                            </li>
+                            <li class="service__item">
+                                <img class="service__icon" src="./images/service-list-icon.svg" alt="Experienced Individuals Icon" width="72" height="72">
+                                <div class="service__item-content-wrapper inner-wrap">
+                                    <h3 class="inner-wrap__title">Experienced Individuals</h3>
+                                    <p class="inner-wrap__text">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                                </div>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </section>
